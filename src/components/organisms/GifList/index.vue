@@ -22,20 +22,6 @@ const { list, loadMore } = useGif()
 
 const loadingMoreTrigger = ref<Element>()
 
-/* const loadMoreGifs = (entries, observer) => {
-  entries.forEach(async (entry) => {
-    if (entry.isIntersecting) {
-      params.value.offset += pagination.value.page * pagination.value.DEFAULT_OFFSET
-
-      const response = await giphyService.get({
-        params: params.value
-      })
-
-      gifList.value = [...gifList.value, ...response.data.data]
-    }
-  })
-} */
-
 onMounted(() => {
   if (!loadingMoreTrigger.value) {
     return
