@@ -1,3 +1,3 @@
 <template>
-  <footer>App footer</footer>
+  <footer></footer>
 </template>

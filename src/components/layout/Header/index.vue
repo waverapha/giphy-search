@@ -6,6 +6,7 @@
 
 <style lang="scss" scoped>
 .b-header {
+  padding: 1rem;
   background: tomato;
 }
 </style>
