@@ -1,12 +1,10 @@
 export type GiphyRequest = {
-  params:
-    | URLSearchParams
-    | {
-        api_key: string
-        limit?: number
-        offset?: number
-        q: string
-      }
+  params: {
+    api_key: string
+    limit?: number
+    offset?: number
+    q: string
+  }
 }
 
 export type GiphyResponse = {
