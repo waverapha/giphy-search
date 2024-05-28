@@ -7,6 +7,7 @@
       :width="gif.images.preview_gif.width"
       :height="gif.images.preview_gif.height"
       :alt="gif.alt_text"
+      :title="gif.title"
       class="gif-list__item"
     />
   </div>
@@ -40,8 +41,11 @@ onMounted(() => {
 </script>
 <style lang="scss" scoped>
 .gif-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template: auto / repeat(10, 100px);
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
   gap: 1rem;
   padding: 3rem;
   margin-top: 2rem;
@@ -50,8 +54,9 @@ onMounted(() => {
   &__item {
     width: 100px;
     height: 100px;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
+    border: 1px solid #fff;
   }
 
   &__no-data {
